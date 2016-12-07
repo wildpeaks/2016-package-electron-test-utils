@@ -34,8 +34,6 @@ function test_left_click_div(done){
 		assert.ok(mousedown.calledBefore(mouseup), 'mousedown is called before mouseup');
 		assert.ok(mousedown.calledBefore(click), 'mousedown is called before click');
 		assert.ok(mousedown.calledBefore(onclick), 'mousedown is called before onclick');
-		assert.ok(mouseup.calledBefore(click), 'mouseup is called before click');
-		assert.ok(mouseup.calledBefore(onclick), 'mouseup is called before onclick');
 
 		done();
 	});
@@ -71,8 +69,6 @@ function test_right_click_div(done){
 		assert.ok(mousedown.calledBefore(mouseup), 'mousedown is called before mouseup');
 		assert.ok(mousedown.calledBefore(contextmenu), 'mousedown is called before contextmenu');
 		assert.ok(mousedown.calledBefore(oncontextmenu), 'mousedown is called before oncontextmenu');
-		assert.ok(mouseup.calledBefore(contextmenu), 'mouseup is called before contextmenu');
-		assert.ok(mouseup.calledBefore(oncontextmenu), 'mouseup is called before oncontextmenu');
 
 		done();
 	});
