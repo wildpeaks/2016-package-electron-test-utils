@@ -1,0 +1,37 @@
+{
+	"name": "@wildpeaks/electron-test-utils",
+	"version": "1.0.0",
+	"description": "Electron Test Utilities",
+	"main": "src/utils.js",
+	"files": [
+		"src/utils.js",
+		"test/getBounds.tests.js",
+		"test/hasFocus.tests.js",
+		"test/screenshot.tests.js",
+		"test/simulateClick.tests.js",
+		"test/simulateKey.tests.js"
+	],
+	"scripts": {
+		"test": "electron-mocha --renderer test/*.js"
+	},
+	"repository": "https://github.com/wildpeaks/package-electron-test-utils",
+	"keywords": [
+		"wildpeaks",
+		"electron",
+		"test"
+	],
+	"author": "Cecile Muller",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/wildpeaks/package-electron-test-utils/issues"
+	},
+	"homepage": "https://github.com/wildpeaks/package-electron-test-utils#readme",
+	"peerDependencies": {
+		"electron": "latest"
+	},
+	"devDependencies": {
+		"electron": "latest",
+		"electron-mocha": "latest",
+		"sinon": "latest"
+	}
+}

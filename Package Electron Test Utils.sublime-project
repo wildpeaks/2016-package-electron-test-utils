@@ -1,0 +1,37 @@
+{
+	"build_systems":
+	[
+		{
+			"name": "Electron Mocha",
+			"shell_cmd": "electron-mocha --no-colors --renderer $file || true",
+			"working_dir": "$project_path"
+		}
+	],
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				".DS_Store",
+				".editorconfig",
+				".gitignore",
+				"*.jshintrc",
+				"*.eslintrc",
+				"*.eslintignore",
+				"*.lnk",
+				"*.url",
+				"*.zip",
+				"*.txt",
+				"*.log",
+				"*.sublime-project",
+				"*.sublime-workspace"
+			],
+			"folder_exclude_patterns":
+			[
+				"package-electron-test-utils/node_modules",
+				"package-electron-test-utils/www"
+			],
+			"path": "."
+		}
+	]
+}
