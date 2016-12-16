@@ -1,6 +1,6 @@
 {
 	"name": "@wildpeaks/electron-test-utils",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Electron Test Utilities",
 	"main": "src/utils.js",
 	"files": [
@@ -27,11 +27,11 @@
 	},
 	"homepage": "https://github.com/wildpeaks/package-electron-test-utils#readme",
 	"peerDependencies": {
-		"electron": "latest"
+		"electron": "^1.4.12"
 	},
 	"devDependencies": {
-		"electron": "latest",
-		"electron-mocha": "latest",
-		"sinon": "latest"
+		"electron": "^1.4.12",
+		"electron-mocha": "^3.3.0",
+		"sinon": "^1.17.6"
 	}
 }
