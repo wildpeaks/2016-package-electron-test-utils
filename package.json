@@ -11,8 +11,13 @@
 		"test/simulateClick.tests.js",
 		"test/simulateKey.tests.js"
 	],
+	"eslintConfig": {
+		"extends": "@wildpeaks/commonjs"
+	},
 	"scripts": {
-		"test": "electron-mocha --renderer test/*.js"
+		"test:eslint": "eslint src",
+		"test:mocha": "electron-mocha --renderer test/*.js",
+		"test": "npm run test:eslint && npm run test:mocha"
 	},
 	"repository": "https://github.com/wildpeaks/package-electron-test-utils",
 	"keywords": [
@@ -27,11 +32,13 @@
 	},
 	"homepage": "https://github.com/wildpeaks/package-electron-test-utils#readme",
 	"peerDependencies": {
-		"electron": "^1.4.12"
+		"electron": ">=1.4.12"
 	},
 	"devDependencies": {
-		"electron": "^1.4.12",
-		"electron-mocha": "^3.3.0",
-		"sinon": "^1.17.6"
+		"electron": "1.4.12",
+		"electron-mocha": "3.3.0",
+		"eslint": "3.14.1",
+		"sinon": "1.17.7",
+		"@wildpeaks/eslint-config-commonjs": "1.1.0"
 	}
 }
