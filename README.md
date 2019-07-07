@@ -1,7 +1,5 @@
 # Electron Test Utilities
 
-[![Build Status](https://travis-ci.org/wildpeaks/package-electron-test-utils.svg?branch=master)](https://travis-ci.org/wildpeaks/package-electron-test-utils)
-
 Collection of helpers for **DOM tests running in Electron**.
 
 Install:
